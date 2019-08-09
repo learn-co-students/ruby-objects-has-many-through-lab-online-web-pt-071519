@@ -19,7 +19,7 @@ class Genre
   
   def artists
     #binding.pry
-    songs.map {|song| song.artist }
+    songs.select {|song| song.artist }
   end 
   
 end
