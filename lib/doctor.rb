@@ -15,6 +15,7 @@ class Doctor
   
   
   def appointments
+   Appointment.all { |appointment| appointment.doctor == self } 
   end 
   
   def new_appointment(patient, date)
@@ -22,7 +23,10 @@ class Doctor
  #makig a new appointmet for the doctor that is being called.  There are three arguments used
   end 
   
-  def patients 
+  def patients
+     appointments.map do |x|
+   x.patient  
   end 
+end 
   
 end 

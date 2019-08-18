@@ -16,13 +16,13 @@ class Appointment
       @@all 
     end 
     
-    def patient
-      Patient.all.select {|patient| patient.appointment == self}
-    end 
+   # def patient
+    #  Patient.all.select {|patient| patient.appointment == self}
+   # end 
     
-    def doctor(doctor)
-      Doctor.all.select {|doctor| doctor.new_appointment == self}
-    end 
+   # def doctor(doctor)
+   #   Doctor.all.select {|doctor| doctor.new_appointment == self}
+   # end 
     
   
 end 
