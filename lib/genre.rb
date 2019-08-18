@@ -8,7 +8,7 @@ class Genre
   def initialize(name)
     @name = name 
    # @artist = artist 
-    @songs = songs
+    @songs = []
     @@all << self 
   end 
   
@@ -16,7 +16,12 @@ class Genre
     @@all 
   end 
   
-  def artists(songs) 
+  def artists 
+     songs.map do |x|
+   x.artist  
+   binding.pry
   end 
+end
+
   
 end 

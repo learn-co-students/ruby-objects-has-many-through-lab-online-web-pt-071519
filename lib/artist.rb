@@ -37,14 +37,19 @@ song
 end 
 
 def genres
-  artist_songs_genre = []
-  songs.each do |x|
- artist_songs_genre << x.genre
-    artist_songs genre
+  songs.map do |x|
+   x.genre  
+  # binding.pry 
+  end 
+end
+# .map returns the information in an array. and . each returns the original array
+ 
+ #artist_songs_genre = []
+ #artist_songs_genre << x.genre
+    #artist_songs genre
  # binding.pry 
   #Song.all.genre
  #binding.pry
-end 
-end 
+ 
 
 end 
